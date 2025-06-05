@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Virtual Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Loja Virtual Simples</h1>
+  </header>
+
+  <main>
+    <div class="product-list">
+      <div class="product">
+        <h2>Produto 1</h2>
+        <p>R$ 50,00</p>
+        <button onclick="addToCart('Produto 1', 50)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <h2>Produto 2</h2>
+        <p>R$ 30,00</p>
+        <button onclick="addToCart('Produto 2', 30)">Adicionar ao Carrinho</button>
+      </div>
+      <div class="product">
+        <h2>Produto 3</h2>
+        <p>R$ 70,00</p>
+        <button onclick="addToCart('Produto 3', 70)">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <h2>Carrinho de Compras</h2>
+    <div id="cart"></div>
+    <p id="total">Total: R$ 0,00</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
